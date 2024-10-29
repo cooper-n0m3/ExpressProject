@@ -1,0 +1,8 @@
+<% if (typeof status !== 'undefined' && status.title=='Error') { %>
+    <div class="alert-msg-error bg-gradient d-flex justify-content-around align-items-center alert  alert-dismissible fade show" id="error-alert" role="alert">
+        <strong class="text-danger fs-4">
+            <%= status.title %>
+        </strong> <%= status.description %>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>

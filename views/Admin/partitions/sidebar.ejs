@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- @sweet alert cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- @theme style -->
+    <link rel="stylesheet" href="/assets/style/theme.css">
+
+    <!-- @Bootstrap -->
+    <link rel="stylesheet" href="/assets/style/bootstrap.css">
+    <!-- @ion icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- @script -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+
+    <!-- @tinyACE -->
+    <script src="https://cdn.tiny.cloud/1/i96vaguf4h31ebjuc8xbdxdaww8uywwjiondlpcr52o73y1v/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <!-- Include CKEditor from the CDN -->
+
+</head>
+<body>
+    <main class="admin">
+        <div class="scroll-model"></div>
+        <div class="scroll-bar"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3 p-0 " id="sideBar">
+                    <div class="content-left">
+                        <div class="top-content">
+                            <div class="top-content-profile">
+                                <img src="/images/admin.png" class="rounded-circle" alt="no profile">
+                            </div>
+                            <div class="admin-name">UUID</div>
+                        </div>
+                        <div class="menu-content">
+                            <ul class="menu">
+                                <li class="parent">
+                                    <a class="parent"href="javascript:void(0)">
+                                        <span class="fw-bold">news</span>
+                                        <img  src="/assets/icon/arrow.png" alt="">
+                                    </a>
+                                    <ul class="child">
+                                        <li>
+                                            <a href="/Admin/viewNews" id="view-logo" class=""><ion-icon name="eye-outline"></ion-icon>View</a>
+                                            <a href="/Admin/addNews" id="add-logo_success" class=""><ion-icon name="add-outline"></ion-icon>Add</a>
+                                            <a href="add-logo.php" id="add-logo_success" class=""><ion-icon name="search-outline"></ion-icon>Search</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="parent">
+                                    <a class="parent"href="javascript:void(0)">
+                                        <span class="fw-bold">logo</span>
+                                        <img  src="/assets/icon/arrow.png" alt="">
+                                    </a>
+                                    <ul class="child">
+                                        <li>
+                                            <a href="view-logo.php" id="view-logo" class=""><ion-icon name="eye-outline"></ion-icon>View</a>
+                                            <a href="add-logo.php" id="add-logo_success" class=""><ion-icon name="add-outline"></ion-icon>Add</a>
+                                            <a href="add-logo.php" id="add-logo_success" class=""><ion-icon name="search-outline"></ion-icon>Search</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bottom-content">
+                            <a href="/auth/logout"><ion-icon name="settings-outline"></ion-icon>Logout</a>
+                        </div>
+                    </div>
+                </div>

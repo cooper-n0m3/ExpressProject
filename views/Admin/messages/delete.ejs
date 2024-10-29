@@ -1,0 +1,11 @@
+<% if (typeof status !== 'undefined' && status.title=='Success') { %>
+    <div class="alert-msg-success bg-gradient gap-2 alert  alert-dismissible fade show" id="success-alert" role="alert">
+        <strong class="text-primary fs-4">
+            <%= status.title %>
+        </strong>  <%= status.description %>
+        <% if (typeof status.username !== 'undefined') { %>
+            <code><%= status.username%></code>
+        <% } %>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>
